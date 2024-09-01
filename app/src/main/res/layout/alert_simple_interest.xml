@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Principal"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/editTextRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rate of Interest (%)"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/editTextPrincipal"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Time (in years)"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/editTextRate"
+        android:layout_marginTop="16dp"/>
+
+
+</RelativeLayout>

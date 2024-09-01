@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Input Field 1 -->
+    <EditText
+        android:id="@+id/input_field_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter number 1"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button_add" />
+
+    <!-- Input Field 2 -->
+    <EditText
+        android:id="@+id/input_field_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter number 2"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/input_field_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button_add" />
+
+    <!-- Button Add (+) -->
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="+"
+        app:layout_constraintTop_toBottomOf="@id/input_field_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_subtract"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!-- Button Subtract (-) -->
+    <Button
+        android:id="@+id/button_subtract"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@id/button_add"
+        app:layout_constraintTop_toBottomOf="@id/input_field_2"
+        app:layout_constraintEnd_toStartOf="@+id/button_multiply"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!-- Button Multiply (*) -->
+    <Button
+        android:id="@+id/button_multiply"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="*"
+        app:layout_constraintStart_toEndOf="@id/button_subtract"
+        app:layout_constraintTop_toBottomOf="@id/input_field_2"
+        app:layout_constraintEnd_toStartOf="@+id/button_divide"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!-- Button Divide (/) -->
+    <Button
+        android:id="@+id/button_divide"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="/"
+        app:layout_constraintStart_toEndOf="@id/button_multiply"
+        app:layout_constraintTop_toBottomOf="@id/input_field_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

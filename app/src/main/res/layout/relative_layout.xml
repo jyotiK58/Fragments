@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/darker_gray"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+<TextView
+android:id="@+id/textView_1"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Linear Layout"
+android:textColor="@color/red"
+android:textStyle="bold"
+android:textSize="18sp"
+android:textAllCaps="true"
+android:gravity="center"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="20dp" />
+
+<EditText
+android:layout_toRightOf="@id/textView_1"
+android:id="@+id/editText_1"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:inputType="textPersonName"
+android:hint="Full name"
+android:textColorHint="@color/red"
+android:textColor="@android:color/black"
+android:textSize="16sp"
+android:gravity="center"
+android:layout_below="@id/textView_1"
+android:layout_marginTop="20dp" />
+
+<CheckBox
+android:layout_alignParentTop="true"
+android:id="@+id/checkbox_1"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Option 1"
+android:textColor="@color/black"
+android:checked="false"
+android:layout_below="@id/editText_1"
+android:layout_marginTop="20dp" />
+
+<Button
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+android:id="@+id/button_1"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Click me"
+android:textColor="@color/red"
+android:background="@drawable/ic_launcher_foreground"
+
+android:layout_marginTop="30dp"
+    />
+
+<RadioGroup
+
+android:id="@+id/radioGroup"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@id/checkbox_1"
+android:layout_marginTop="20dp"
+    android:layout_alignTop="@id/button_1">
+
+<RadioButton
+    android:id="@+id/radio_button_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Choice A"
+    android:textColor="@color/black"
+    android:checked="false" />
+
+<RadioButton
+
+    android:id="@+id/radio_button_2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Choice B"
+    android:textColor="@color/black"
+    android:checked="false" />
+</RadioGroup>
+
+    </RelativeLayout>
